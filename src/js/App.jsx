@@ -1,11 +1,13 @@
 import { createRoot } from "react-dom/client";
 import { GalleryCard } from "./components/Card.jsx";
+import { Header } from "./components/Header.jsx";
 
 const App = () => {
   return (
     <>
-    <ul id="gallery" class="container error-container gallery home-gallery">
-    <GalleryCard
+      <Header />
+      <ul id="gallery" class="container error-container gallery home-gallery">
+        <GalleryCard
           imageUrl="https://res.cloudinary.com/iireii/image/upload/v1686104576/Cetav/events/music-001_w50seu.jpg"
           eventName="2023 Dallas Soul Flower Music Fest"
           date="Saturday, June 17, 2:00 PM"
@@ -26,7 +28,7 @@ const App = () => {
           location="The Tailor Public House • New York, NY."
           price="44.82"
         />
-    </ul>
+      </ul>
     </>
   );
 };
