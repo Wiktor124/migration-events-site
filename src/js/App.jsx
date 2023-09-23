@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import { GalleryCard } from "./components/Card.jsx";
 import { Header } from "./components/Header.jsx";
+import { MyComponent } from "./components/Buttons.jsx";
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
           location="Main Street Garden Park • Dallas, TX"
           price="10.00"
         />
+        <MyComponent/>
+        
         <GalleryCard
           imageUrl="https://res.cloudinary.com/iireii/image/upload/v1686105236/Cetav/events/music-002_wex6ub.jpg"
           eventName="Hookie DC (2023): Cloud 9"
@@ -21,6 +24,8 @@ const App = () => {
           location="Festival Grounds • Fort Washington, MD."
           price="60.00"
         />
+        <MyComponent/>
+
         <GalleryCard
           imageUrl="https://res.cloudinary.com/iireii/image/upload/v1686105556/Cetav/events/music-004_h768uj.jpg"
           eventName="Kostume Kult Presents: A.I. A.I. Oh! - Black &amp; Light Ball 2023"
@@ -28,6 +33,8 @@ const App = () => {
           location="The Tailor Public House • New York, NY."
           price="44.82"
         />
+        <MyComponent/>
+
       </ul>
     </>
   );
