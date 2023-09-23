@@ -1,4 +1,4 @@
-import { MyComponent } from "./Buttons";
+import { MyComponent } from "./Buttons.jsx";
 const GalleryCard = ({ imageUrl, eventName, date, location, price }) =>
 {
   return (

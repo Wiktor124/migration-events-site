@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <ul id="gallery" class="container error-container gallery home-gallery">
+      <ul id="gallery" className="container error-container gallery home-gallery">
         <GalleryCard
           imageUrl="https://res.cloudinary.com/iireii/image/upload/v1686104576/Cetav/events/music-001_w50seu.jpg"
           eventName="2023 Dallas Soul Flower Music Fest"
