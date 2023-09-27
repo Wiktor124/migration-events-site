@@ -1,4 +1,5 @@
-import { MyComponent } from "./Buttons.jsx";
+import CardButtons from "./card/CardButtons.jsx";
+
 const GalleryCard = ({ imageUrl, eventName, date, location, price }) =>
 {
   return (
@@ -10,8 +11,8 @@ const GalleryCard = ({ imageUrl, eventName, date, location, price }) =>
             <p className="date">{date}</p>
             <p>{location}</p>
             <strong>${price}</strong>
-            <MyComponent/>
           </div>
+          <CardButtons />
         </div>
       </li>
   );
