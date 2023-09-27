@@ -1,3 +1,4 @@
+import { homeTabs } from "./config.js";
 import { createRoot } from "react-dom/client";
 import { GalleryCard } from "./components/Card.jsx";
 import { Header } from "./components/Header.jsx";
@@ -5,7 +6,7 @@ import { Header } from "./components/Header.jsx";
 const App = () => {
   return (
     <>
-      <Header />
+      <Header tabs={ homeTabs }/>
       <ul id="gallery" className="container error-container gallery home-gallery">
         <GalleryCard
           imageUrl="https://res.cloudinary.com/iireii/image/upload/v1686104576/Cetav/events/music-001_w50seu.jpg"
