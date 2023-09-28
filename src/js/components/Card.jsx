@@ -1,4 +1,5 @@
-import CardButtons from "./card/CardButtons.jsx";
+import {CardButtons,Favorites} from "./card/CardButtons.jsx";
+
 
 const GalleryCard = ({ imageUrl, eventName, date, location, price }) =>
 {
@@ -13,9 +14,11 @@ const GalleryCard = ({ imageUrl, eventName, date, location, price }) =>
             <strong>${price}</strong>
           </div>
           <CardButtons />
+          <Favorites/>
         </div>
       </li>
   );
 }
+
 
 export {GalleryCard};

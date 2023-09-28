@@ -23,4 +23,20 @@ const CardButtons = () => {
   );
 };
 
-export default CardButtons;
+const Favorites = () => {
+  const [favorite, setFavorite] = useState(false);
+  console.log(favorite);
+
+  const handleClick = () => {
+    setFavorite(!favorite);
+  }
+
+  return (
+    <div>
+      <button onClick={handleClick} className={favorite ? "heart heart-blue" : "heart"}></button>
+    </div>
+  );
+}
+
+
+export  {CardButtons,Favorites};
